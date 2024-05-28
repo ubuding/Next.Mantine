@@ -1,0 +1,38 @@
+.modules-layout.navbar-wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 32px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 999;
+  background-color: #000;
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    justify-content: space-between;
+    align-items: center;
+    .logo-wrap {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .logo {
+        width: 52px;
+        height: 52px;
+        background: url("./images/logo.jpg");
+        background-size: cover;
+        border-radius: 50%;
+      }
+    }
+    .label {
+      width: 360px;
+      height: 52px;
+      background: url("./images/text.png");
+      background-size: cover;
+    }
+    .tools {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.modules-layout.footer-wrap {
+  display: flex;
+  height: 24px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  background-color: #000;
+  cursor: pointer;
+  .item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 24px;
+    .tabler-icon {
+      margin-right: 2px;
+    }
+    &.text {
+      margin-left: auto;
+      width: 260px;
+      height: 24px;
+      background: url("./images/text.png");
+      background-size: cover;
+    }
+  }
+}

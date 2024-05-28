@@ -1,0 +1,25 @@
+:root[data-mantine-color-scheme="light"] {
+  --mantine-color-next-mantine-0: #f6ecff;
+  --mantine-color-next-mantine-1: #e6d5fc;
+  --mantine-color-next-mantine-2: #caa6f4;
+  --mantine-color-next-mantine-3: #ac75ee;
+  --mantine-color-next-mantine-4: #934ce8;
+  --mantine-color-next-mantine-5: #8332e4;
+  --mantine-color-next-mantine-6: #7b24e4;
+  --mantine-color-next-mantine-7: #6918cb;
+  --mantine-color-next-mantine-8: #5d13b6;
+  --mantine-color-next-mantine-9: #500ca0;
+}
+
+:root[data-mantine-color-scheme="dark"] {
+  --mantine-color-next-mantine-0: #ffe8e8;
+  --mantine-color-next-mantine-1: #ffcfcf;
+  --mantine-color-next-mantine-2: #ff9b9c;
+  --mantine-color-next-mantine-3: #ff6464;
+  --mantine-color-next-mantine-4: #fe3837;
+  --mantine-color-next-mantine-5: #fe1b19;
+  --mantine-color-next-mantine-6: #ff0909;
+  --mantine-color-next-mantine-7: #e40000;
+  --mantine-color-next-mantine-8: #cb0000;
+  --mantine-color-next-mantine-9: #b10000;
+}
