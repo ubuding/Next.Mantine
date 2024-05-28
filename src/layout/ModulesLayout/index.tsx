@@ -5,11 +5,11 @@ import { IconRobot, IconHome } from "@tabler/icons-react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./style.scss";
-export default function ModulesLayout({
+export const ModulesLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) => {
   /* @ChildrenScroll 监听子元素滚动事件, 实现导航栏的动态显示 Start */
   const ref = useRef(null);
   const [display, setDisplay] = useState(true);
@@ -75,4 +75,4 @@ export default function ModulesLayout({
       <Footer />
     </div>
   );
-}
+};

@@ -1,4 +1,1 @@
-import { HomePage } from "$/modules/home/pages";
-export default function Home() {
-  return <HomePage />;
-}
+export { Home as default } from "$/modules/home/pages";

@@ -1,4 +1,1 @@
-import { UbudingPage } from "$/modules/ubuding/pages";
-export default function Ubuding() {
-  return <UbudingPage />;
-}
+export { Ubuding as default } from "$/modules/ubuding/pages";

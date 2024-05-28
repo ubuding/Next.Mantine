@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "永远不要失去前进的脚步, 与赴死的勇气",
 };
 
-export const RootLayoutPage = async ({
+export const RootLayout = async ({
   children,
   params: { locale },
 }: {

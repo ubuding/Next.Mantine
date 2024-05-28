@@ -6,7 +6,7 @@ import ImageWaterfall from "#/ImageWaterfall";
 import Hot from "@/ubuding/components/Hot";
 import { getImages } from "./service";
 import "./style.scss";
-export const UbudingPage = () => {
+export const Ubuding = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { data, loading, loadMore, loadingMore, noMore } = useInfiniteScroll(
     (_) => {
