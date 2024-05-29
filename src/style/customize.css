@@ -1,5 +1,4 @@
 /* 视口大小 START */
-
 html,
 body {
   width: 100vw;
@@ -18,21 +17,13 @@ body {
   src: url("/fonts/Orbitron-ExtraBold.ttf");
 }
 
-html[lang="en"] body {
+body {
   box-sizing: border-box;
   overflow: hidden;
-  font-family: "Orbitron";
-}
-
-html[lang="zh"] body {
-  box-sizing: border-box;
-  overflow: hidden;
-  font-family: "Microsoft Yahei", "PingFang SC", "San Francisco", "Heiti SC",
-    "Helvetica";
+  font-family: "Orbitron" !important;
 }
 
 /* 滚动条 START */
-
 ::-webkit-scrollbar {
   background: transparent;
   width: 0px;

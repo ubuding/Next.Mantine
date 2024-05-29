@@ -1,0 +1,33 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  align-items: center;
+  padding: 12px 0;
+  .item {
+    width: 80%;
+    margin-bottom: 24px;
+    .title {
+      margin-bottom: 12px;
+      font-size: 24px;
+
+      background-image: linear-gradient(
+        to bottom,
+        var(--mantine-color-next-mantine-6) 0%,
+        var(--mantine-color-text) 100%
+      );
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .content {
+      font-size: 16px;
+    }
+    .directory {
+      border-left: 1px solid;
+      padding-left: 6px;
+      .directory-2 {
+        padding-left: 24px;
+      }
+    }
+  }
+}
