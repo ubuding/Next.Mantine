@@ -1,7 +1,88 @@
-.module.home-module {
+.module.ubuding-module {
   width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   box-sizing: border-box;
+  .block {
+    font-size: 36px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 6px;
+    &.active {
+      &::before,
+      &::after {
+        content: "";
+        border: 2px solid;
+        border-right-width: 4px;
+        border-top-width: 4px;
+        border-image: linear-gradient(
+            45deg,
+            gold,
+            rgb(105, 6, 167),
+            rgb(6, 124, 220)
+          )
+          1;
+        position: absolute;
+        top: -8px;
+        left: -4px;
+        right: -8px;
+        bottom: -4px;
+        animation: clippath 3s infinite;
+        &:nth-of-type(2n) {
+          animation: clippath 1.5s infinite;
+        }
+      }
+      &::before {
+        animation: clippath 3s infinite -1.5s linear;
+      }
+      &:nth-of-type(2n) {
+        &::before,
+        &::after {
+          content: "";
+          border: 2px solid;
+          border-right-width: 4px;
+          border-top-width: 4px;
+          border-image: linear-gradient(
+              45deg,
+              gold,
+              rgb(105, 6, 167),
+              rgb(6, 124, 220)
+            )
+            1;
+          position: absolute;
+          top: -8px;
+          left: -4px;
+          right: -8px;
+          bottom: -4px;
+          animation: clippath 1.5s infinite;
+        }
+
+        &::before {
+          animation: clippath 1.5s infinite -0.75s linear;
+        }
+      }
+    }
+  }
+
+  @keyframes clippath {
+    0%,
+    100% {
+      clip-path: inset(0 0 96% 0);
+      filter: hue-rotate(0deg);
+    }
+    25% {
+      clip-path: inset(0 96% 0 0);
+    }
+    50% {
+      clip-path: inset(96% 0 0 0);
+      filter: hue-rotate(360deg);
+    }
+    75% {
+      clip-path: inset(0 0 0 96%);
+    }
+  }
 }

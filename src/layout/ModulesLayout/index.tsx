@@ -1,9 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { Tabs } from "@mantine/core";
-import { IconRobot, IconHome } from "@tabler/icons-react";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import "./style.scss";
 export const ModulesLayout = ({
   children,
@@ -38,7 +35,7 @@ export const ModulesLayout = ({
   return (
     <div className="layout modules-layout">
       <Navbar />
-      <div
+      {/* <div
         style={{
           width: "100%",
           height: "46px",
@@ -60,19 +57,19 @@ export const ModulesLayout = ({
             </Tabs.Tab>
           </Tabs.List>
         </Tabs>
-      </div>
+      </div> */}
 
       <main
         className="modules-wrap"
         ref={ref}
         style={{
-          marginTop: display ? "52px" : "0px",
-          transition: "margin-top 400ms ease",
+          marginTop: "12px",
+          // marginTop: display ? "52px" : "0px",
+          // transition: "margin-top 400ms ease",
         }}
       >
         {children}
       </main>
-      <Footer />
     </div>
   );
 };

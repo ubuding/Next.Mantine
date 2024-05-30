@@ -9,30 +9,84 @@
   .navbar {
     display: flex;
     flex-direction: row;
-    height: 52px;
+    height: 62px;
     justify-content: space-between;
     align-items: center;
     .logo-wrap {
       display: flex;
       flex-direction: row;
       align-items: center;
+      cursor: pointer;
       .logo {
         width: 52px;
         height: 52px;
-        background: url("./images/logo.jpg");
+        background: url("./images/logo.png");
         background-size: cover;
-        border-radius: 50%;
+      }
+      .label {
+        font-size: 28px;
+        color: #fff;
+        font-weight: normal;
       }
     }
-    .label {
-      width: 360px;
-      height: 52px;
-      background: url("./images/text.png");
-      background-size: cover;
+    .tab-wrap {
+      display: flex;
+      color: #fff;
+      align-items: center;
     }
     .tools {
       display: flex;
       flex-direction: row;
+      .button {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
+        &::before {
+          content: "";
+          position: absolute;
+          background: inherit;
+          top: -5px;
+          left: -5px;
+          right: -5px;
+          bottom: -5px;
+          border-radius: 50px;
+          filter: blur(20px);
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+        &:hover {
+          background: linear-gradient(
+            90deg,
+            #03a9fa,
+            #f441a5,
+            #ffeb3b,
+            #03a9f4
+          );
+          background-size: 400%;
+          z-index: 1;
+          animation: glow 8s linear infinite;
+        }
+        &:hover:before {
+          opacity: 1;
+          z-index: -1;
+        }
+        @keyframes glow {
+          0% {
+            background-position: 0%;
+          }
+          100% {
+            background-position: 400%;
+          }
+        }
+      }
     }
   }
 }

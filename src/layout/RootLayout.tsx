@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
@@ -8,11 +7,6 @@ import { Notifications } from "@mantine/notifications";
 import { NavigationProgress } from "@mantine/nprogress";
 import { theme } from "$/style";
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "永远少年",
-  description: "永远不要失去前进的脚步, 与赴死的勇气",
-};
 
 export const RootLayout = async ({
   children,
